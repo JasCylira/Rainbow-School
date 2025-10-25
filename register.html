@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S’enregistrer — Rainbow School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="brand"><span class="logo">🌈</span><span class="brand-text">Rainbow School</span></div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="concept.html">Concept</a>
+      <a href="valeurs.html">Valeurs</a>
+      <a href="schedule.html">Emplois du temps</a>
+      <a href="study.html">Twitch Live</a>
+      <a href="participate.html">Participer</a>
+      <a href="register.html" class="active">S’enregistrer</a>
+      <a href="socials.html">Réseaux</a>
+      <a href="discord.html">Discord</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions"><button id="themeToggle" class="pill">☀️/🌙</button></div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1 class="gradient-title">Devenir membre</h1>
+      <p class="muted">Tu recevras une confirmation par email (pré-remplie).</p>
+      <form id="registerForm">
+        <label>Pseudo
+          <input name="pseudo" required placeholder="Ton pseudo" />
+        </label>
+        <label>Email
+          <input type="email" name="email" required placeholder="ton@email" />
+        </label>
+        <label>Matière préférée
+          <select name="favorite" required>
+            <option>Informatique</option><option>Musique</option><option>Art & Design</option>
+            <option>Game Dev</option><option>Écriture & Lore</option><option>Langues (EN)</option>
+          </select>
+        </label>
+        <label>Pourquoi tu veux nous rejoindre ?
+          <textarea name="why" rows="5" placeholder="Ta motivation sucrée 💖"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Envoyer ma demande</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer glass"><p>© 2025 Rainbow School — JasCylira 🌈</p></footer>
+  <div id="scPopup" class="sc-popup glass"><button class="close">×</button>
+    <div class="sc-header"><strong>🎵 Lo-fi pastel — JasCylira</strong><small class="muted">Clique ▶️</small></div>
+    <iframe width="100%" height="120" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jascylira/sets/heav1n&auto_play=false"></iframe>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

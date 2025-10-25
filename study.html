@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Étudier en Live — Rainbow School</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header glass">
+    <div class="brand"><span class="logo">🌈</span><span class="brand-text">Rainbow School</span></div>
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="study.html" class="active">Twitch Live</a>
+      <a href="concept.html">Concept</a>
+      <a href="schedule.html">Emplois du temps</a>
+      <a href="participate.html">Participer</a>
+      <a href="register.html">S’enregistrer</a>
+      <a href="socials.html">Réseaux</a>
+      <a href="discord.html">Discord</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions"><button id="themeToggle" class="pill">☀️/🌙</button></div>
+  </header>
+
+  <main class="container split">
+    <section class="box">
+      <h2 class="gradient-title">Live Twitch — jascylira_dreamverse</h2>
+      <!-- Remplace parent=tondomaine.com en prod -->
+      <div style="display:grid; gap:10px;">
+        <iframe
+          src="https://player.twitch.tv/?channel=jascylira_dreamverse&parent=localhost"
+          height="360" width="100%" allowfullscreen frameborder="0">
+        </iframe>
+        <iframe
+          src="https://www.twitch.tv/embed/jascylira_dreamverse/chat?parent=localhost"
+          height="360" width="100%" frameborder="0">
+        </iframe>
+      </div>
+      <p class="tiny muted">Si l’embed ne s’affiche pas, ouvre le live ici :
+        <a class="btn link" href="https://twitch.tv/jascylira_dreamverse" target="_blank" rel="noopener">twitch.tv/jascylira_dreamverse</a>
+      </p>
+    </section>
+
+    <aside class="box">
+      <h3>🎯 Panneau d’étude</h3>
+      <label>Matière du moment
+        <select id="liveMatter">
+          <option>Informatique</option><option>Musique</option><option>Art & Design</option>
+          <option>Game Dev</option><option>Écriture & Lore</option><option>Langues (EN)</option>
+        </select>
+      </label>
+
+      <form id="studyChecklist" class="row-gap" style="margin-top:12px;">
+        <div class="row" style="display:flex; gap:8px;">
+          <input id="newTask" placeholder="Ajouter une tâche (ex: réviser les accords 7ème)"/>
+          <button class="btn small" type="submit">+ Ajouter</button>
+        </div>
+        <ul id="taskList" style="list-style:none; padding:0; display:grid; gap:8px;"></ul>
+      </form>
+      <p class="tiny muted">Ta checklist est stockée en local dans ton navigateur.</p>
+    </aside>
+  </main>
+
+  <footer class="site-footer glass"><p>© 2025 Rainbow School — JasCylira 🌈</p></footer>
+  <div id="scPopup" class="sc-popup glass"><button class="close">×</button>
+    <div class="sc-header"><strong>🎵 Lo-fi pastel — JasCylira</strong><small class="muted">Clique ▶️</small></div>
+    <iframe width="100%" height="120" frameborder="no" allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/jascylira/sets/heav1n&auto_play=false"></iframe>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
